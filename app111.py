@@ -417,14 +417,28 @@ with edit_col2:
         value=active_event["description"],
         height=150,
         key=f"desc_event_{active_event['id']}",
-    )
-    if st.button("💾 Save Reflection to Memory Vault", key=f"save_event_{active_event['id']}"):
-        active_event["description"] = new_desc
-        save_persistent_events(st.session_state.events)
-        st.success("Reflection Permanently Saved to Memory Vault!")
+    )›
+    
+    
+    btn_col1, btn_col2 = st.columns([1, 1])
+    
+    with btn_col1:
+        if st.button("💾 Save Reflection", key=f"save_event_{active_event['id']}", use_container_width=True):
+            active_event["description"] = new_desc
+            save_persistent_events(st.session_state.events)
+            st.success("Reflection Permanently Saved!")
 
-
-  
-
-
-
+    with btn_col2:
+        if st.button("🗑️ Delete This Memory", key=f"del_event_{active_event['id']}", type="secondary", use_container_width=True):
+            
+            st.session_state.events = [e for e in st.session_state.events if e["id"] != active_event["id"]]
+            
+            
+            save_persistent_events(st.session_state.events)
+            
+            
+            if st.session_state.events:
+                st.session_state.selected_event_id = st.session_state.events[0]["id"]
+            
+            
+            st.rerun()

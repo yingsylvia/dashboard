@@ -1,0 +1,53 @@
+[
+  {
+    "id": 3,
+    "title": "Live Capture: [Watching Sunset by the Beach]",
+    "category": "🔥 Live Tracking Peak",
+    "date": "2026-09-22 03:04:01.752",
+    "location": "San Francisco Bay Area",
+    "novelty_score": 90.0,
+    "ml_joy_prob": 0.92,
+    "hr_peak": 110,
+    "hr_baseline": 70,
+    "hrv_rmssd": 85.0,
+    "hrv_baseline": 40.0,
+    "gsr_delta": 0.8,
+    "motion_vm": 0.02,
+    "description": "beautiful sunset",
+    "image": "data/images/event_3_1790046241.png"
+  },
+  {
+    "id": 1,
+    "title": "First Walk with Someone Special (5km)",
+    "category": "Romantic Moment (Historical Peak)",
+    "date": "2023-06-25 21:52:00.000",
+    "location": "Olympic Forest Park, Beijing",
+    "novelty_score": 96.0,
+    "ml_joy_prob": 0.94,
+    "hr_peak": 125,
+    "hr_baseline": 72,
+    "hrv_rmssd": 95.0,
+    "hrv_baseline": 42.0,
+    "gsr_delta": 0.75,
+    "motion_vm": 0.02,
+    "description": " My heart is fluttering",
+    "image": "data/images/event_1_1790046193.png"
+  },
+  {
+    "id": 2,
+    "title": "First Successful Dish Cooked Abroad",
+    "category": "Independence Milestone (Historical Peak)",
+    "date": "2023-09-08 16:48:00.000",
+    "location": "Brooklyn Apartment, NYC",
+    "novelty_score": 92.0,
+    "ml_joy_prob": 0.91,
+    "hr_peak": 104,
+    "hr_baseline": 70,
+    "hrv_rmssd": 88.0,
+    "hrv_baseline": 40.0,
+    "gsr_delta": 0.58,
+    "motion_vm": 0.01,
+    "description": "taste good",
+    "image": "data/images/event_2_1790046242.png"
+  }
+]
